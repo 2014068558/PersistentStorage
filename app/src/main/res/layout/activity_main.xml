@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.earl.persistentstorage.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username: "
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="51dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/uname" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/uname"
+        android:layout_alignBottom="@+id/uname"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/editUname" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password: "
+        android:id="@+id/pw"
+        android:layout_alignBaseline="@+id/editPw"
+        android:layout_alignBottom="@+id/editPw"
+        android:layout_alignLeft="@+id/uname"
+        android:layout_alignStart="@+id/uname" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editUname"
+        android:layout_alignLeft="@+id/editUname"
+        android:layout_alignStart="@+id/editUname"
+        android:id="@+id/editPw" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Info"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/editPw"
+        android:layout_alignLeft="@+id/editPw"
+        android:layout_alignStart="@+id/pw"
+        android:onClick="saveInfo"/>
+
+    <Button
+        android:id="@+id/display"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Display Info"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_alignBottom="@+id/save"
+        android:layout_toRightOf="@+id/save"
+        android:layout_toEndOf="@+id/save"
+        android:onClick="loadInfo"/>
+
+    <TextView
+        android:id="@+id/tv_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        />
+
+
+
+</RelativeLayout>
