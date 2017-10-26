@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        etUname = (EditText) findViewById (R.id.editUname);
-        etPw = (EditText) findViewById (R.id.editPw);
+        etUname = (EditText) findViewById (R.id.etUname);
+        etPw = (EditText) findViewById (R.id.etPw);
         btnSave = (Button) findViewById (R.id.save);
         btnDisplay = (Button) findViewById (R.id.display);
         tvDisplay = (TextView) findViewById (R.id.tv_display);
@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void loadInfo (View view) {
-        String user = preferences.getString("Username", "");
-        String pwd = preferences.getString("Password", "");
+        String user = preferences.getString("username", "");
+        String pwd = preferences.getString("password", "");
         tvDisplay.setText("The password of " + user + " is " + pwd);
 
     }
